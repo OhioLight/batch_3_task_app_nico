@@ -18,16 +18,16 @@ class ShowHideNameWidget extends StatefulWidget {
 }
 
 class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
-  String _name = '';
-  bool _isVisible = false;
+  String name = '';
+  bool isVisible = false;
 
-  void _toggleVisibility() {
+  void toggleVisibility() {
     setState(() {
-      _isVisible = !_isVisible;
-      if (_isVisible) {
-        _name = 'Nico Rudloff';
+      isVisible = !isVisible;
+      if (isVisible) {
+        name = 'Nico Rudloff';
       } else {
-        _name = '';
+        name = '';
       }
     });
   }
@@ -39,14 +39,14 @@ class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            _name,
+            name,
             style: const TextStyle(
               fontSize: 20,
             ),
           ),
           ElevatedButton(
-            onPressed: _toggleVisibility,
-            child: Text(_isVisible ? 'Name verstecken' : 'Name anzeigen'),
+            onPressed: toggleVisibility,
+            child: Text(isVisible ? 'Name verstecken' : 'Name anzeigen'),
           ),
         ],
       ),

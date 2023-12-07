@@ -9,9 +9,9 @@ class S4523 extends StatelessWidget {
 }
 
 class MyNameWidget extends StatefulWidget {
-  const MyNameWidget({super.key, this.nameText});
-
-  final String? nameText;
+  const MyNameWidget({
+    super.key,
+  });
 
   @override
   State<MyNameWidget> createState() => _MyNameWidgetState();
