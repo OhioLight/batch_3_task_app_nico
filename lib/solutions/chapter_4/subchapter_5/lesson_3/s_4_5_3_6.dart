@@ -9,15 +9,14 @@ class S4536 extends StatelessWidget {
 }
 
 class MyWidget3 extends StatelessWidget {
-  const MyWidget3({super.key});
+  const MyWidget3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     List<Products> productList = getAllProducts();
 
-    return ListView.separated(
+    return ListView.builder(
       itemCount: productList.length,
-      separatorBuilder: (context, index) => const Divider(),
       itemBuilder: (BuildContext context, int index) {
         Products product = productList[index];
         return ListTile(
@@ -39,10 +38,10 @@ class Products {
 List<Products> getAllProducts() {
   List<Products> productList = [
     Products(name: 'Mac', price: 1999.99),
-    Products(name: 'iPhone', price: 1299.99), // Produktname korrigieren
+    Products(name: 'iPhone', price: 1299.99),
     Products(name: 'Watch', price: 699.99),
-    Products(name: 'iPad', price: 799.99), // Beispielprodukt hinzufügen
-    Products(name: 'AirPods', price: 199.99), // Beispielprodukt hinzufügen
+    Products(name: 'iPad', price: 799.99),
+    Products(name: 'AirPods', price: 199.99),
   ];
   return productList;
 }
