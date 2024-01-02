@@ -4,7 +4,7 @@ class S5113 extends StatelessWidget {
   const S5113({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return const CustomMaterialButton();
   }
 }
 
@@ -13,6 +13,32 @@ class CustomMaterialButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return Ink(
+      width: 100,
+      height: 100,
+      decoration: BoxDecoration(
+        color: Colors.blue,
+        boxShadow: const [
+          BoxShadow(
+            color: Color.fromARGB(255, 200, 94, 94),
+            blurRadius: 7,
+            offset: Offset(5, 5),
+          )
+        ],
+        shape: BoxShape.rectangle,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: InkWell(
+        splashColor: Colors.amber,
+        borderRadius: BorderRadius.circular(20),
+        onTap: () {},
+        child: const Center(
+          child: Text(
+            'Hallo',
+            style: TextStyle(fontSize: 20, color: Colors.black),
+          ),
+        ),
+      ),
+    );
   }
 }

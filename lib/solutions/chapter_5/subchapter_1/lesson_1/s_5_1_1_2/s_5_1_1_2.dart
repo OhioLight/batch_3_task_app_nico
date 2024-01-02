@@ -13,7 +13,7 @@ class Aufgabe5112 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var upperStyle = const TextStyle(
+    var headerStyle = const TextStyle(
         fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black);
     var hintStyle = const TextStyle(fontSize: 16, color: Colors.black);
     return Padding(
@@ -33,10 +33,10 @@ class Aufgabe5112 extends StatelessWidget {
                 ),
                 Text(
                   'Name',
-                  style: upperStyle,
+                  style: headerStyle,
                 ),
                 Text(
-                  'Diana das Lama',
+                  'Jana das Lama',
                   style: hintStyle,
                 ),
                 const SizedBox(
@@ -44,10 +44,10 @@ class Aufgabe5112 extends StatelessWidget {
                 ),
                 Text(
                   'Gewicht',
-                  style: upperStyle,
+                  style: headerStyle,
                 ),
                 Text(
-                  '120 kg',
+                  '115 kg',
                   style: hintStyle,
                 ),
                 const SizedBox(
@@ -55,10 +55,10 @@ class Aufgabe5112 extends StatelessWidget {
                 ),
                 Text(
                   'Größe',
-                  style: upperStyle,
+                  style: headerStyle,
                 ),
                 Text(
-                  '1,80 m',
+                  '1,70 m',
                   style: hintStyle,
                 ),
                 const SizedBox(
@@ -66,10 +66,10 @@ class Aufgabe5112 extends StatelessWidget {
                 ),
                 Text(
                   'Lieblingsessen',
-                  style: upperStyle,
+                  style: headerStyle,
                 ),
                 Text(
-                  'Gras',
+                  'Heu',
                   style: hintStyle,
                 ),
               ],
