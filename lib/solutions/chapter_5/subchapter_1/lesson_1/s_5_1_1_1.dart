@@ -15,7 +15,7 @@ class Aufgabe1 extends StatefulWidget {
   State<Aufgabe1> createState() => _Aufgabe1State();
 }
 
-bool isSwitched = false;
+bool _isSwitched = false;
 
 class _Aufgabe1State extends State<Aufgabe1> {
   @override
@@ -25,7 +25,6 @@ class _Aufgabe1State extends State<Aufgabe1> {
         children: [
           const Text(
             'Hello World!',
-            style: TextStyle(color: Colors.white),
           ),
           const SizedBox(
             height: 20,
@@ -53,10 +52,10 @@ class _Aufgabe1State extends State<Aufgabe1> {
           ),
           Switch(
             activeColor: Colors.amber.shade800,
-            value: isSwitched,
+            value: _isSwitched,
             onChanged: (value) {
               setState(() {
-                isSwitched = value;
+                _isSwitched = value;
               });
             },
           )

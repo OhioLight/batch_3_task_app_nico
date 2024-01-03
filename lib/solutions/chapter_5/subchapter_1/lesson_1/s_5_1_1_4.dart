@@ -15,7 +15,7 @@ class AppAkademie extends StatefulWidget {
   State<AppAkademie> createState() => _AppAkademieState();
 }
 
-bool isSelectad = false;
+bool _isSelectad = false;
 
 class _AppAkademieState extends State<AppAkademie> {
   @override
@@ -23,12 +23,12 @@ class _AppAkademieState extends State<AppAkademie> {
     return GestureDetector(
       onTap: () {
         setState(() {
-          isSelectad = !isSelectad;
+          _isSelectad = !_isSelectad;
         });
       },
       child: AnimatedDefaultTextStyle(
         curve: Curves.bounceInOut,
-        style: TextStyle(fontSize: isSelectad ? 20 : 30),
+        style: TextStyle(fontSize: _isSelectad ? 20 : 30),
         duration: const Duration(seconds: 3),
         child: const Text('Hello, App Akademie!'),
       ),
