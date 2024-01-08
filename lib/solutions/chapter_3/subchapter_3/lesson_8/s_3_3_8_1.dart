@@ -12,9 +12,8 @@ int reverseNumber(int input) {
   return reversed;
 }
 
-
 class S3381 extends StatefulWidget {
-  const S3381({Key? key}) : super(key: key);
+  const S3381({super.key});
 
   @override
   State<S3381> createState() => _S3381State();

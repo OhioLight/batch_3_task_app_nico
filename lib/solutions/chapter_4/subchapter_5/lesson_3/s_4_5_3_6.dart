@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class S4536 extends StatelessWidget {
-  const S4536({Key? key}) : super(key: key);
+  const S4536({super.key});
   @override
   Widget build(BuildContext context) {
     return const MyWidget3();
@@ -10,8 +10,8 @@ class S4536 extends StatelessWidget {
 
 class MyWidget3 extends StatelessWidget {
   const MyWidget3({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
