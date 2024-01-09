@@ -16,7 +16,7 @@ class ErrorImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: CachedNetworkImage(
-          errorWidget: (context, url, error) => const Text('Image not found'),
+          errorWidget: (context, url, error) => const Text('image not found'),
           imageUrl:
               'https://www.wallpaperup.com/uploads/wallpapers/2012/09/30/17396/238b3d28cf642bc0ac39855a723bfdb3.jpg'),
     );

@@ -17,7 +17,9 @@ class CachedIndicater extends StatelessWidget {
     return Center(
       child: CachedNetworkImage(
           progressIndicatorBuilder: (context, url, progress) =>
-              const CircularProgressIndicator(),
+              CircularProgressIndicator(
+                value: progress.progress,
+              ),
           imageUrl:
               'https://i0.wp.com/homeoftravel.de/wp-content/uploads/2020/11/Herkules-und-Wasserspiele-im-Berpark-Wilhelmsho%CC%88he-in-Kassel.jpg'),
     );
