@@ -67,7 +67,7 @@ class _Aufgabe5511State extends State<Aufgabe5511> {
     print('async5');
   }
 
-  Future<void> _onButtonPressed() async {
+  Future<void> _press() async {
     await Future.wait(
       [
         async1(),
@@ -77,7 +77,7 @@ class _Aufgabe5511State extends State<Aufgabe5511> {
     print('Fertig');
   }
 
-  Future<void> _onButtonPressed2() async {
+  Future<void> _press2() async {
     await Future.wait(
       [
         async3(),
@@ -87,7 +87,7 @@ class _Aufgabe5511State extends State<Aufgabe5511> {
     print('Fertig');
   }
 
-  Future<void> _onButtonPressed3() async {
+  Future<void> _press3() async {
     await Future.wait(
       [
         async5(),
@@ -104,7 +104,7 @@ class _Aufgabe5511State extends State<Aufgabe5511> {
         children: [
           ElevatedButton(
             onPressed: () {
-              _onButtonPressed();
+              _press();
             },
             child: const Text('+'),
           ),
@@ -123,7 +123,7 @@ class _Aufgabe5511State extends State<Aufgabe5511> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  _onButtonPressed3();
+                  _press3();
                 },
                 child: const Text('Reset'),
               ),
@@ -132,7 +132,7 @@ class _Aufgabe5511State extends State<Aufgabe5511> {
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              _onButtonPressed2();
+              _press2();
             },
             child: const Text('-'),
           ),
