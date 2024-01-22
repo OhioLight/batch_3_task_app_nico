@@ -4,6 +4,23 @@ class S5411 extends StatelessWidget {
   const S5411({super.key});
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return Center(
+      child: ElevatedButton(
+        onPressed: () {
+          try {
+            throw Exception("DAU Fehler");
+          } catch (e) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  "Fehler: $e",
+                ),
+              ),
+            );
+          }
+        },
+        child: const Text("Fehler werfen"),
+      ),
+    );
   }
 }
